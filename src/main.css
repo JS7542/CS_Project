@@ -1,0 +1,92 @@
+.main {
+  background-color: bisque;
+  display: grid;
+  gap: 5px; /* 자식요소간의 간격 */
+}
+
+.header {
+  margin: auto; /* header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
+  width: 75vw;
+  height: 20vh;
+  position: relative;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  background-color: azure;
+}
+
+.middle {
+  width: 75vw;
+  height: 80vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 55vw 20vw; /* 각 행(세로줄)의 길이 */
+  grid-template-rows: 70vh 30vh; /* 각 열(가로줄)의 길이 */
+  gap: 5px; /* 자식요소간의 간격 */
+}
+.visual {
+  position: relative;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  background-color: azure;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+}
+.user > div:first-child {
+  flex: 7;
+}
+.user > div:last-child {
+  flex: 3;
+}
+
+.menue {
+  position: relative;
+  flex-direction: column;
+  border: 1px solid #000000;
+  overflow-y: scroll;
+  border-radius: 0.5rem;
+  background-color: azure;
+}
+
+.estimate {
+  position: relative;
+  border: 1px solid #000000;
+  flex: 3;
+  border-radius: 0.5rem;
+  background-color: azure;
+}
+
+.Category {
+  position: relative;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 15px 124px;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Main:hover {
+  background-color: #d4d4d4;
+}
+
+.hiddenButton {
+  display: none;
+}
+
+.item {
+  position: relative;
+  border: 1px solid #000000;
+  border-radius: 0.25rem;
+}
