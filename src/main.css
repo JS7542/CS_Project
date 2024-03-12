@@ -28,8 +28,18 @@
   border: 1px solid #000000;
   border-radius: 0.5rem;
   background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.startBox {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .user {
   position: relative;
   display: flex;
@@ -44,7 +54,7 @@
   flex: 3;
 }
 
-.menue {
+.menu {
   position: relative;
   flex-direction: column;
   border: 1px solid #000000;

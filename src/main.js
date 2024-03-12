@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import "./main.css";
 const YourComponent = () => {
-  const str = "이거는 견적";
-
   return (
     <div className="main">
       <div className="header">여백</div>
       <div className="middle">
-        <div className="visual">아무튼 인테리어 들어갈 공간</div>
+        <div className="visual">
+          <div className="startBox" onClick={selectHendle}>
+            시작하기
+          </div>
+        </div>
         <div className="user">
-          <div className="menue">
+          <div className="menu">
             <button className="Category">Category1</button>
             <h2 className="itemsC1">
               {/* Category 1 items */}
@@ -35,7 +37,7 @@ const YourComponent = () => {
               <button className="item">item 4</button>
             </h2>
           </div>
-          <div className="estimate">{str}</div>
+          <div className="estimate">견적</div>
         </div>
       </div>
     </div>
