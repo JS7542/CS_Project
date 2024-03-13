@@ -1,14 +1,33 @@
 import React, { useState } from "react";
-import "./main.css";
+import "../css/main.css";
+import Modal from "./modal";
+
 const YourComponent = () => {
+  function altitude() {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [modalOpen, setModalOpen] = useState(false);
+  
+    const openModal = () => {
+      setModalOpen(true);
+    };
+    const closeModal = () => {
+      setModalOpen(false);
+    };
+  
+    return (
+      <React.Fragment>
+        <div className="startBox" onClick={openModal}>모달팝업</div>
+        <Modal open={modalOpen} close={closeModal} header="Modal heading">
+        </Modal>
+      </React.Fragment>
+    );
+  }
   return (
     <div className="main">
       <div className="header">여백</div>
       <div className="middle">
         <div className="visual">
-          <div className="startBox" onClick={selectHendle}>
-            시작하기
-          </div>
+          <div >{altitude()}</div>
         </div>
         <div className="user">
           <div className="menu">

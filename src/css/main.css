@@ -14,6 +14,7 @@
   background-color: azure;
 }
 
+
 .middle {
   width: 75vw;
   height: 80vh;
@@ -38,7 +39,9 @@
   background-color: bisque;
   display: flex;
   justify-content: center;
+  border-radius: 0.5rem;
   align-items: center;
+  cursor: pointer;
 }
 .user {
   position: relative;

@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import "./home.css";
+import logo from "../logo.svg";
+import "../css/home.css";
 import { Link } from "react-router-dom";
 
 function home() {
