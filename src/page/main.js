@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import "../css/main.css";
-import Modal from "./modal";
+import "../css/main1.css";
+import Modal from "../component/modal";
+import Bar from "../component/sideBar";
+import Canvas3D from "../component/canvas";
+import Calcuator from "../component/calculator";
+import Topbar from "../component/topBar";
 
 const YourComponent = () => {
   function Altitude() {
@@ -26,54 +30,13 @@ const YourComponent = () => {
       </React.Fragment>
     );
   }
+
   return (
     <div className="main">
-      <div className="header">여백</div>
-      <div className="middle">
-        <div className="visual">
-          <div>{Altitude()}</div>
-        </div>
-        <div className="user">
-          <div className="menu">
-            <button className="Category">Category1</button>
-            <h2 className="itemsC1">
-              <button className="item">item 1</button>
-              <button className="item">item 2</button>
-              <button className="item">item 3</button>
-              <button className="item">item 4</button>
-            </h2>
-            <button className="Category">Category2</button>
-            <h2 className="itemsC2">
-              <button className="item">item 1</button>
-              <button className="item">item 2</button>
-              <button className="item">item 3</button>
-              <button className="item">item 4</button>
-            </h2>{" "}
-            <button className="Category">Category3</button>
-            <h2 className="itemsC3">
-              <button className="item">item 1</button>
-              <button className="item">item 2</button>
-              <button className="item">item 3</button>
-              <button className="item">item 4</button>
-            </h2>
-            <button className="Category">Category3</button>
-            <h2 className="itemsC3">
-              <button className="item">item 1</button>
-              <button className="item">item 2</button>
-              <button className="item">item 3</button>
-              <button className="item">item 4</button>
-            </h2>
-            <button className="Category">Category3</button>
-            <h2 className="itemsC3">
-              <button className="item">item 1</button>
-              <button className="item">item 2</button>
-              <button className="item">item 3</button>
-              <button className="item">item 4</button>
-            </h2>
-          </div>
-          <div className="estimate">견적</div>
-        </div>
-      </div>
+      <Topbar></Topbar>
+      <Canvas3D></Canvas3D>
+      <Bar></Bar>
+      <Calcuator></Calcuator>
     </div>
   );
 };
